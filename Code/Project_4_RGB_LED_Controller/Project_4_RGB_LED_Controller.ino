@@ -68,9 +68,16 @@ void loop() {
  }
  
  if(flag == 0){
+   // RGB LED Common ANODE
    analogWrite(redPin, 255-redTempValue.toInt());
    analogWrite(greenPin, 255-greenTempValue.toInt());
    analogWrite(bluePin, 255-blueTempValue.toInt());
+   
+   // RGB LED Common CATHODE
+   // analogWrite(redPin, redTempValue.toInt());
+   // analogWrite(greenPin, greenTempValue.toInt());
+   // analogWrite(bluePin, blueTempValue.toInt());
+   
    /*Serial.print('R');
    Serial.println(redTempValue);
    Serial.print('G');
